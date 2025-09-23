@@ -1,0 +1,111 @@
+
+
+C:\Users\raki.hasan>D:
+D:\>cd \Python\Projects\GitDemo
+
+D:\Python\Projects\GitDemo>git init
+Initialized empty Git repository in D:/Python/Projects/GitDemo/.git/
+
+D:\Python\Projects\GitDemo>git init
+Reinitialized existing Git repository in D:/Python/Projects/GitDemo/.git/
+
+D:\Python\Projects\GitDemo>git remote add origin https://github.com/mdrakibulhasanoffice-crypto/Python_Lessons.git
+
+D:\Python\Projects\GitDemo>git pull origin master
+fatal: couldn't find remote ref master
+
+
+D:\Python\Projects\GitDemo>git pull origin main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 873 bytes | 87.00 KiB/s, done.
+From https://github.com/mdrakibulhasanoffice-crypto/Python_Lessons
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+
+D:\Python\Projects\GitDemo>cd D:\Python\Projects\GitDemo
+
+D:\Python\Projects\GitDemo>git init
+Reinitialized existing Git repository in D:/Python/Projects/GitDemo/.git/
+
+D:\Python\Projects\GitDemo>dir /a
+ Volume in drive D has no label.
+ Volume Serial Number is F899-CE27
+
+ Directory of D:\Python\Projects\GitDemo
+
+09/24/2025  01:30 AM    <DIR>          .
+09/23/2025  11:51 PM    <DIR>          ..
+09/24/2025  01:30 AM    <DIR>          .git
+09/24/2025  01:30 AM                16 README.md
+               1 File(s)             16 bytes
+               3 Dir(s)  286,066,028,544 bytes free
+
+
+D:\Python\Projects\GitDemo>git add .
+
+D:\Python\Projects\GitDemo>git commit -m "Git Demo"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'raki.hasan@Rakibul-awl18.(none)')
+
+D:\Python\Projects\GitDemo>git commit -m "Git Demo"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+fatal: unable to auto-detect email address (got 'raki.hasan@Rakibul-awl18.(none)')
+
+
+D:\Python\Projects\GitDemo>git config --global user.name "mdrakibulhasanoffice-crypto"
+
+D:\Python\Projects\GitDemo>git config --global user.email "md.rakibulhasan.office@gmail.com"
+
+D:\Python\Projects\GitDemo>git config --global --list
+user.name=mdrakibulhasanoffice-crypto
+user.email=md.rakibulhasan.office@gmail.com
+
+D:\Python\Projects\GitDemo>cd D:\Python\Projects\GitDemo
+
+D:\Python\Projects\GitDemo>git remote add origin https://github.com/mdrakibulhasanoffice-crypto/Python_Lessons.git
+error: remote origin already exists.
+
+D:\Python\Projects\GitDemo>git add .
+
+D:\Python\Projects\GitDemo>git commit -m "Initial commit"
+[master 618e06e] Initial commit
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 DemoApp/Sample.txt.txt
+
+D:\Python\Projects\GitDemo>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mdrakibulhasanoffice-crypto/Python_Lessons.git'
+
+D:\Python\Projects\GitDemo>git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 416 bytes | 208.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mdrakibulhasanoffice-crypto/Python_Lessons.git
+   fcea80f..618e06e  master -> master
+branch 'master' set up to track 'origin/master'.
